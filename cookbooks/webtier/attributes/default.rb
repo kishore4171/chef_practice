@@ -1,5 +1,5 @@
 if node['platform'] == "centos"
-    default['package_name']['webserver'] = ['epel-release', 'nginx']
+    default['package_name']['webserver'] = %w(epel-release nginx)
 elsif node['platform'] == "ubuntu"
     default['package_name']['webserver'] = 'apache2'
 else
