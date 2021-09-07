@@ -17,7 +17,7 @@ template '/usr/share/doc/HTML/index.html' do
     group 'root'
     mode '0755'
     action :create
-    variables(webserver_name: node.default['package_name']['webserver'][1])
+    variables(webserver_name: node.default['package_name']['webserver'])
 end
 
 service 'nginx' do
