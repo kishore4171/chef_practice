@@ -11,7 +11,7 @@ package pkg do
     action :install
 end
 
-service 'service_name' do
+service pkg do
     action [:enable, :start]
 end
 
