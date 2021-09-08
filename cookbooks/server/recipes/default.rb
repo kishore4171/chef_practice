@@ -31,6 +31,7 @@ directory '/var/www/html' do
     group 'root'
     mode '0755'
     action :create
+    recursive true
 end
 
 template '/var/www/html/hello.html' do
