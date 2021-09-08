@@ -26,6 +26,12 @@ directory '/testweb' do
     mode '0755'
     action :create
 end
+directory '/var/www/html' do
+    owner 'root'
+    group 'root'
+    mode '0755'
+    action :create
+end
 
 template '/var/www/html/hello.html' do
     source 'hello.html.erb'
