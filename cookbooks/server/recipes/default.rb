@@ -34,8 +34,8 @@ directory '/var/www/html' do
     recursive true
 end
 
-template '/var/www/html/hello.html' do
-    source 'hello.html.erb'
+template '/usr/share/doc/HTML/index.html' do
+    source 'index.html.erb'
     owner 'root'
     group 'root'
     mode '0755'
